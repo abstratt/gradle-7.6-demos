@@ -1,0 +1,18 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="asciinema-player.css" />
+  <title>--offline vs CC</title>
+</head>
+<body>
+  <div id="player"></div>
+  <script src="asciinema-player.min.js"></script>
+
+  <script>
+    AsciinemaPlayer.create(
+      'report-tasks.cast',
+      document.getElementById('player'),
+      { cols: 118, rows: 28, speed: 2.5, fit: "height", idleTimeLimit: 2, autoPlay: true }
+    );
+  </script>
+</body>
+</html>
