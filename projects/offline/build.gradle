@@ -1,0 +1,14 @@
+plugins {
+    id 'java-library'
+}
+
+task hello {
+    def uuid = UUID.randomUUID()
+    doLast {
+        println "Hello $uuid"
+    }
+}
+
+dependencies {
+    implementation 'commons-io:commons-io:2.6'
+}
